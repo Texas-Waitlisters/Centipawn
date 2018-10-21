@@ -11,6 +11,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script src="https://authedmine.com/lib/simple-ui.min.js" async></script>
 	</head>
 	<body class="is-preload">
 
@@ -24,62 +25,93 @@
 							<h1>Centipawn</h1>
 							<p>Decentralized Gaming</p>
 						</header>
-                        <script src="https://authedmine.com/lib/simple-ui.min.js" async></script>
-                        <div class="coinhive-miner"
-                            style="width: 256px; height: 310px"
-                            data-key="caP8U8pZXH6n0f53eV3fdpwOvpmTAD3C">
-                        <em>Loading...</em>
-                        </div>
-						<!--
-						<hr />
-						<h2>Extra Stuff!</h2>
-						<form method="post" action="#">
-							<div class="fields">
-								<div class="field">
-									<input type="text" name="name" id="name" placeholder="Name" />
-								</div>
-								<div class="field">
-									<input type="email" name="email" id="email" placeholder="Email" />
-								</div>
-								<div class="field">
-									<select name="department" id="department">
-										<option value="">Department</option>
-										<option value="sales">Sales</option>
-										<option value="tech">Tech Support</option>
-										<option value="null">/dev/null</option>
-									</select>
-								</div>
-								<div class="field">
-									<textarea name="message" id="message" placeholder="Message" rows="4"></textarea>
-								</div>
-								<div class="field">
-									<input type="checkbox" id="human" name="human" /><label for="human">I'm a human</label>
-								</div>
-								<div class="field">
-									<label>But are you a robot?</label>
-									<input type="radio" id="robot_yes" name="robot" /><label for="robot_yes">Yes</label>
-									<input type="radio" id="robot_no" name="robot" /><label for="robot_no">No</label>
-								</div>
+
+						<!-- <div class="inline-flex-parent"> -->
+
+
+						<!-- <div id="snake" class="child"> -->
+						  <!-- <iframe src="snake.html" id="snakeFrame" height="800" width="1000" style="display:inline-block; overflow:hidden !important;"></iframe> -->
+
+
+
+							<title>JavaScript Snake</title>
+							<h1>Snake</h1>
+							<link rel=stylesheet id=style type=text/css href=./css/main-snake.css />
+							<div align=center>
+							   <div id="mode-wrapper">Select which mode you would like to play in.<br /><br>
+							      <button class="myButton" id="Easy">Easy</button>
+							      <button class="myButton" id="Medium">Medium</button>
+							      <button class="myButton" id="Difficult">Difficult</button>
+							      <br><br>
+							      <button class="myButton" id="High-Score">Get your current high score for this game.</button>
+							      <br>
+							   </div>
+							   <!-- <button class="myButton" id="high-score">Get your current high score for this game.</button> -->
 							</div>
-							<ul class="actions special">
-								<li><a href="#" class="button">Get Started</a></li>
-							</ul>
-						</form>
-						<hr />
-						-->
-						<footer>
+							<div class="inline-flex-parent">
+							<div id="snake" class="child">
+							<script>
+							   function getTheme () {
+							       function changeTheme (Theme) {
+							           document.getElementById('style').setAttribute('href', Theme);
+							       }
+							       var index = document.getElementById("select").selectedIndex;
+							       switch (index) {
+							           case 0:
+							             changeTheme('css/dark-snake.css');
+							             break;
+							             case 1: changeTheme('css/main-snake.css');
+							       }
+							   }
+							   if (navigator.onLine && window.location.hostname === 'patorjk.com') {
+							       var _gaq = _gaq || [];
+							       _gaq.push(['_setAccount', 'UA-3312460-1']);
+							       _gaq.push(['_trackPageview']);
+
+							       (function() {
+							         var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+							         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+							         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+							       })();
+							   }
+							</script>
+
+							   <div id="game-area" width="60vw" height="60vh" tabindex="0">
+							   </div>
+							   <script type="text/javascript" src="./js/snake.js"></script>
+							   <script type="text/javascript">
+							      var mySnakeBoard = new SNAKE.Board(  {
+							                                              boardContainer: "game-area",
+							                                              fullScreen: false
+							                                          });
+							   </script>
+
+
+
+
+
+						</div>
+
+					<div class="coinhive-miner child"
+							style="width: 256px; height: 310px"
+							data-key="caP8U8pZXH6n0f53eV3fdpwOvpmTAD3C">
+					<em>Loading...</em>
+					</div>
+					</div>
+
+						<!-- <footer>
 							<ul class="icons">
 								<li><a href="#" class="fa-twitter">Twitter</a></li>
 								<li><a href="#" class="fa-instagram">Instagram</a></li>
 								<li><a href="#" class="fa-facebook">Facebook</a></li>
 							</ul>
-						</footer>
+						</footer> -->
 					</section>
 
 				<!-- Footer -->
 					<footer id="footer">
 						<ul class="copyright">
-							<li>&copy; Waitlisters</li><li>Design: <a href="http://html5up.net">A HackTX project</a></li>
+							<li>&copy; Waitlisters</li><li>A HackTX project</a></li>
 						</ul>
 					</footer>
 
@@ -92,6 +124,5 @@
 					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
 				}
 			</script>
-        <iframe src="snake.html" height="1000" width="1000" styles="display:inline-block"></iframe>
 	</body>
 </html>

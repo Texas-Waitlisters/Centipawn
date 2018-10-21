@@ -35,7 +35,7 @@
 .coinhive-miner
 {
      margin: 0 auto;
-     width: 100px; 
+     width: 100px;
 }
 
 	body {
@@ -205,7 +205,7 @@
 		}
 
 	strong, b {
-		color: #313f47;
+		color: #white;
 	}
 
 	em, i {
@@ -901,7 +901,7 @@
 		opacity: 0.95;
 		position: relative;
 		text-align: center;
-		width: 27em;
+		width: 70vw;
 	}
 
 		#main .avatar {
@@ -923,7 +923,7 @@
 				position: absolute;
 				top: 50%;
 				left: -3em;
-				width: calc(100% + 6em);
+				/* width: calc(100% + 6em); */
 				height: 1px;
 				z-index: -1;
 				background: #c8cccf;
@@ -1033,3 +1033,17 @@
 		body.is-ie #wrapper {
 			height: 100%;
 		}
+
+.inline-flex-parent {
+  display: inline-flex;
+}
+
+.child {
+  /* border: 1px solid indigo; */
+  padding: 1rem
+}
+
+iframe {
+    min-height: 300px; /* or whatever */
+    max-height: 500px; /* or whatever */
+}

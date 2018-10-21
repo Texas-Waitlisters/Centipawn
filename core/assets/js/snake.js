@@ -160,7 +160,6 @@ SNAKE.Snake = SNAKE.Snake || (function() {
             tempNode.style.top = "-1000px";
             tempNode.style.width = playingBoard.getBlockWidth() + "px";
             tempNode.style.height = playingBoard.getBlockHeight() + "px";
-            // tempNode.style.height = 600 + "px";
             return tempNode;
         }
 
@@ -984,7 +983,7 @@ SNAKE.Board = SNAKE.Board || (function() {
     }; // end return function
 })();
 function getHighScore () {
-    document.getElementById('High-Score').addEventListener('click', function () {
+    document.getElementById('high-score').addEventListener('click', function () {
         if (localStorage.jsSnakeHighScore == undefined) alert('You have not played this game yet!');
         else
     alert('Your current high score is ' + localStorage.jsSnakeHighScore + '.'); });
