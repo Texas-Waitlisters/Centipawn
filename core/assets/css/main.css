@@ -32,6 +32,11 @@
 	footer, header, hgroup, menu, nav, section {
 		display: block;
 	}
+.coinhive-miner
+{
+     margin: 0 auto;
+     width: 100px; 
+}
 
 	body {
 		line-height: 1;
