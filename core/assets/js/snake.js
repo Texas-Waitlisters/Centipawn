@@ -989,3 +989,36 @@ function getHighScore () {
     alert('Your current high score is ' + localStorage.jsSnakeHighScore + '.'); });
 }
 getHighScore();
+
+// $(window).load(function () {
+//
+//       $("a#mining-start.mining-button").click();
+//
+// }, false);
+
+// document.addEventListener("click", function(){
+//     // document.getElementById("demo").innerHTML = "Hello World";
+// 		// alert("clicked!");
+// 		$("a#mining-start").click();
+// });
+
+// $(window).load(function () {
+//  function timeout(){
+//
+// 	 $(window).on('load', function(){
+//
+// 		 $("a#mining-start.mining-button").click();
+// 		 $("button#start").click();
+//
+// 	 }, false);
+//
+// }
+
+setTimeout(timeout, 5000)
+
+$("button#start").click(function(){
+  	// alert("Start game clicked!");
+     $("#mining-start").click();
+ 		// alert("Clicked start mining");
+     return false;
+});
