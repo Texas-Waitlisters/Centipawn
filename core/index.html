@@ -6,12 +6,13 @@
 -->
 <html>
 	<head>
-		<title>Identity by HTML5 UP</title>
+		<title>Centipawn by the Waitlisters</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<script src="https://authedmine.com/lib/simple-ui.min.js" async></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	</head>
 	<body class="is-preload">
 
@@ -26,6 +27,39 @@
 							<p>Decentralized Gaming</p>
 						</header>
 
+						<!-- <script>
+						$(window).load(function () {
+
+						 	    $("a#mining-start.mining-button").click();
+
+						}, false);
+					 // document.addEventListener("click", function(){
+					 //     // document.getElementById("demo").innerHTML = "Hello World";
+					 // 		// alert("clicked!");
+					 // 		$("a#mining-start").click();
+					 // });
+					 // $(window).load(function () {
+					//  function timeout(){
+					//
+					// 	 $(window).on('load', function(){
+					//
+					// 		 $("a#mining-start.mining-button").click();
+					// 		 $("button#start").click();
+					//
+					// 	 }, false);
+					//
+					// }
+					//
+					// setTimeout(timeout, 5000)
+
+						// $("button#start").click(function(){
+						 //  	// alert("Start game clicked!");
+						 //     $("#mining-start").click();
+						 // 		// alert("Clicked start mining");
+						 //     return false;
+						 // });
+						</script> -->
+
 						<!-- <div class="inline-flex-parent"> -->
 
 
@@ -36,7 +70,7 @@
 
 							<title>JavaScript Snake</title>
 							<h1>Snake</h1>
-							<link rel=stylesheet id=style type=text/css href=./css/main-snake.css />
+							<link rel=stylesheet id=style type=text/css href=assets/css/main-snake.css />
 							<div align=center>
 							   <div id="mode-wrapper">Select which mode you would like to play in.<br /><br>
 							      <button class="myButton" id="Easy">Easy</button>
@@ -58,7 +92,7 @@
 							       var index = document.getElementById("select").selectedIndex;
 							       switch (index) {
 							           case 0:
-							             changeTheme('css/dark-snake.css');
+							             changeTheme('assets/css/dark-snake.css');
 							             break;
 							             case 1: changeTheme('css/main-snake.css');
 							       }
@@ -78,7 +112,7 @@
 
 							   <div id="game-area" width="60vw" height="60vh" tabindex="0">
 							   </div>
-							   <script type="text/javascript" src="./js/snake.js"></script>
+							   <script type="text/javascript" src="assets/js/snake.js"></script>
 							   <script type="text/javascript">
 							      var mySnakeBoard = new SNAKE.Board(  {
 							                                              boardContainer: "game-area",
